@@ -1,0 +1,54 @@
+@import "./mixin";
+@import "./variables";
+@import "./select";
+@import "./button";
+
+* {
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent; // #DCDCDC;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color_a; // #87949D;
+    border-radius: 4px;
+  }
+}
+a.disable {
+  color: #d0d0d0 !important;
+  font-weight: 300;
+  pointer-events: none;
+  cursor: default;
+  font-size: 16px !important;
+}
+html,
+body {
+  height: auto !important;
+  max-width: 100vw;
+  cursor: default;
+  @include pad {
+    overflow-x: hidden;
+  }
+}
+body {
+  padding-top: 54px;
+  @include pad {
+    padding-top: 40px;
+  }
+}
+
+button,
+img {
+  user-select: none;
+}
+//沒廣告時隱藏
+ins.adsbygoogle[data-ad-status="unfilled"] {
+  display: none !important;
+}

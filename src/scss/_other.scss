@@ -1,0 +1,64 @@
+// 表單統一
+#app .inputWrap {
+  max-width: 900px;
+  padding: 0 24px;
+  margin: 0 auto;
+  font-size: 18px;
+  @include mobile {
+    padding: 0 20px;
+  }
+  label {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: $color_3;
+    @include mobile {
+      font-size: 14px;
+    }
+    span {
+      font-size: 15px;
+      font-weight: 500;
+      color: #333;
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+  }
+  input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #bbb !important;
+    transition: .3s;
+    &:focus{
+        outline: none;
+        border-bottom: 3px solid $color_a !important;
+    }
+  }
+//   .ant-input-affix-wrapper,
+//   .ant-input-number-input-wrap {
+//     border-top: none;
+//     border-left: none;
+//     border-right: none;
+//     border-bottom: 2px solid $color_1 !important;
+//   }
+//   .ant-input-number,
+//   .ant-input-number-input {
+//     border: none;
+//   }
+//   .ant-input-number:focus {
+//     box-shadow: none;
+//     .ant-input-number-input-wrap {
+//       border-bottom: 2px solid $color_a !important;
+//     }
+//   }
+//   .ant-input-number-focused {
+//     box-shadow: none;
+//   }
+}
+.ant-checkbox-inner{
+  border: 1px solid #000;
+}

@@ -1,0 +1,44 @@
+@import "./mixin";
+.btn-pri {
+  background-color: $color_a;
+  letter-spacing: 2px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  padding: 4px 12px;
+  height: auto;
+  color: $color_white;
+  @include mobile {
+    font-size: 13px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $color_a_hover;
+    color: $color_white;
+  }
+}
+
+.btn-sec {
+  background-color: $color_real_hover;
+  letter-spacing: 2px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  padding: 4px 12px;
+  height: auto;
+  color: $color_white;
+  @include mobile {
+    font-size: 13px;
+  }
+  &:hover {
+    background-color: $color_a;
+  }
+  &:focus {
+    background-color: $color_a;
+  }
+}
+
+.btn-line {
+  color: $color_a;
+  border-color: $color_a;
+}
