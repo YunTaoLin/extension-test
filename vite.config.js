@@ -43,7 +43,9 @@ export default defineConfig({
     },
   },
   base: "/extension-test/",
-  
+  build: {
+    outDir: "docs",
+  },
 
   devtool: "nosources-source-map",
 });
